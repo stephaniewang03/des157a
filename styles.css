@@ -1,8 +1,8 @@
-.molle-regular-italic {
-    font-family: "Molle", cursive;
+.leckerli-one-regular {
+    font-family: "Leckerli One", cursive;
     font-weight: 400;
-    font-style: italic;
-}
+    font-style: normal;
+  }
 
 .jockey-one-regular {
     font-family: "Jockey One", sans-serif;
@@ -20,6 +20,23 @@ body {
     margin: 0 auto;
 }
 
+#sun {
+    position: absolute;
+    left: 170px;
+    top: 68px;
+    animation: rotate 5s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg); /* Start at 0 degrees */
+    }
+    to {
+        transform: rotate(360deg); /* Complete a full rotation */
+    }
+}
+
 header {
     background-color: #E1EFF2;
     width: 100%;
@@ -28,20 +45,54 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
+    display: flex;
+    align-items: center;
 }
 
 h1 {
-    font-family: "Molle", cursive;
-    font-weight: 600;
+    font-family: "Leckerli One", cursive;
+    font-weight: 400;
     font-style: italic;
     font-size: 50px;
-    padding: 40px 0 0 145px;
+    padding-left: 280px;
     color: #006075;
 }
 
 header p {
-    padding-left: 150px;
+    padding-left: 285px;
     color: #1E7A8E;
+}
+
+#chicknhearts {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 170px;
+}
+
+#hearts {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.chick {
+    position: relative;
+    z-index: 2;
+    top: 95px;
+    right: 8px;
+    cursor:pointer;
+}
+
+#chicknhearts:hover #hearts {
+    transform: translateY(-50px);
+    opacity: 1;
+    z-index: 3;
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out, z-index 0s 1s;
 }
 
 h2 {
@@ -94,12 +145,21 @@ footer {
     background-color: #E1EFF2;
     width: 100%;
     height: 70px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
 }
 
 footer p, footer a {
     font-size: 14px;
-    padding-top: 8px;
+    text-decoration: none;
+    margin: 0;
+    color: #1E7A8E;
 }
