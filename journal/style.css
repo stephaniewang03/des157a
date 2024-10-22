@@ -306,6 +306,10 @@ address {
     font-size: 12px;
 }
 
+.hidden {
+    display: none;
+}
+
 @media only screen and (min-width: 600px) {
     #internal main {
         padding: 2em 6em 2em 6em;
