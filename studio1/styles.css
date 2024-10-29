@@ -22,9 +22,9 @@ body {
     margin-top: 50px;
 }
 
-h1 {
+h1.home, h1.result {
     font-family: "Macondo Swash Caps", cursive;
-    font-size: 60px;
+    font-size: 50px;
     color: #9c7e59;
     margin-bottom: 40px;
 }
@@ -84,7 +84,8 @@ input:focus {
     border-color: #5e4a32;
 }
 
-button {
+button.home {
+    margin: 0 auto;
     margin-top: 10px;
     font-family: "Fondamento", cursive;
     padding: 10px;
@@ -94,7 +95,6 @@ button {
     border: none;
     cursor: pointer;
     width: 50%;
-    margin: 10px auto;
     border-radius: 10px;
 }
 
@@ -142,16 +142,19 @@ button:hover {
     text-align: center;
 }
 
+
 .back-button {
     position: absolute;
     right: 380px;
     margin-top: 20px;
+    font-family: "Fondamento", cursive;
     padding: 10px 20px;
+    font-size: 1.2em;
     background-color: #7e47d8;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 1em;
+    cursor: pointer;
+    border-radius: 10px;
     text-align: center;
     transition: background-color 0.3s ease;
 }

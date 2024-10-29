@@ -8,13 +8,13 @@
         form.addEventListener("submit", function(event) {
             event.preventDefault();
 
-            const adjective = document.getElementById("adjective").value.trim();
-            const noun = document.getElementById("noun").value.trim();
-            const animal1 = document.getElementById("animal1").value.trim();
-            const drink = document.getElementById("drink").value.trim();
-            const animal2 = document.getElementById("animal2").value.trim();
-            const emotion = document.getElementById("emotion").value.trim();
-            const food = document.getElementById("food").value.trim();
+            const adjective = document.getElementById("adjective").value;
+            const noun = document.getElementById("noun").value;
+            const animal1 = document.getElementById("animal1").value;
+            const drink = document.getElementById("drink").value;
+            const animal2 = document.getElementById("animal2").value;
+            const emotion = document.getElementById("emotion").value;
+            const food = document.getElementById("food").value;
 
             if (!adjective || !noun || !animal1 || !drink || !animal2 || !emotion || !food) {
                 document.getElementById("errorMessage").textContent = "Please fill out all fields before creating your potion.";
