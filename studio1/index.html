@@ -6,6 +6,7 @@
     <title>Super Power Magic Potion</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Macondo+Swash+Caps&display=swap" rel="stylesheet">
@@ -19,27 +20,28 @@
                 <img src="images/scroll.png" alt="scroll" class="scroll-background">
                 <form id="madlibsForm">
                     <label for="adjective">Enter an adjective:</label>
-                    <input type="text" id="adjective" name="adjective" required><br>
+                    <input type="text" id="adjective" name="adjective"><br>
 
                     <label for="noun">Enter a noun:</label>
-                    <input type="text" id="noun" name="noun" required><br>
+                    <input type="text" id="noun" name="noun"><br>
 
                     <label for="animal1">Enter an animal:</label>
-                    <input type="text" id="animal1" name="animal1" required><br>
+                    <input type="text" id="animal1" name="animal1"><br>
 
                     <label for="drink">Enter a drink:</label>
-                    <input type="text" id="drink" name="drink" required><br>
+                    <input type="text" id="drink" name="drink"><br>
 
                     <label for="animal2">Enter another animal:</label>
-                    <input type="text" id="animal2" name="animal2" required><br>
+                    <input type="text" id="animal2" name="animal2"><br>
 
                     <label for="emotion">Enter an emotion:</label>
-                    <input type="text" id="emotion" name="emotion" required><br>
+                    <input type="text" id="emotion" name="emotion"><br>
 
                     <label for="food">Enter your favorite food:</label>
-                    <input type="text" id="food" name="food" required><br>
+                    <input type="text" id="food" name="food"><br>
 
                     <button type="submit">Create Potion</button>
+                    <p id="errorMessage" style="color: red;"></p>
                 </form>
             </div>
         </div>

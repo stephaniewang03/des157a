@@ -44,7 +44,7 @@ h1 {
 .form-container {
     position: relative;
     width: 400px;
-    padding: 90px 60px 30px 40px;
+    padding: 110px 60px 30px 40px;
 }
 
 .scroll-background {
@@ -110,6 +110,7 @@ button:hover {
 }
 
 .result-content {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,4 +140,22 @@ button:hover {
     color: #7d6547;
     margin-top: 10px;
     text-align: center;
+}
+
+.back-button {
+    position: absolute;
+    right: 380px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #7e47d8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #f89f1a;
 }
