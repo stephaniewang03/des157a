@@ -1,0 +1,355 @@
+.audiowide-regular {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.bruno-ace-regular {
+    font-family: "Bruno Ace", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400 600;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+html {
+    height: 100%;
+}
+
+#front body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    background: rgb(161, 175, 190);
+    background: linear-gradient(0deg, rgba(161, 175, 190, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    margin: auto;
+}
+
+#front main {
+    flex: 1;
+}
+
+#front article {
+    background: white;
+    border: solid #D0D9E3;
+    border-width: 1px 2px 2px 1px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 16px;
+}
+
+#front time {
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 10px;
+    background-color: #D0D9E3;
+    border-radius: 20px;
+    padding: 7px 22px 7px 22px;
+}
+
+#front h1 {
+    font-family: "Audiowide", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 2em;
+    color: #404040;
+}
+
+#front h2 {
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 14px;
+    margin: 10px 0px 20px 0px;
+}
+
+#front p {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333333;
+    margin: 20px 0px 20px 0px;
+}
+
+#front .readmore {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #C25757;
+    text-decoration: none;
+}
+
+
+#front aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1em 0 1em 0;
+}
+
+#front nav ul {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#front nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #526983;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+#front nav ul li a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    display: block;
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 10px;
+}
+
+#front footer {
+    background: #526983;
+    padding: 2em;
+    margin-top: 1em;
+    font-family: "Bruno Ace", sans-serif;
+    color: white;
+}
+
+#front footer p {
+    text-decoration: none;
+    font-family: "Bruno Ace", sans-serif;
+    color: white;
+    margin: auto;
+    font-size: 12px;
+    padding: 1em;
+}
+
+#front footer a {
+    color: white;
+}
+
+address {
+    font-style: normal;
+    font-size: 12px;
+    padding: 1em;
+    text-emphasis-style: none;
+}
+
+@media only screen and (min-width: 600px) {
+    #front #content {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        padding-bottom: 1em;
+    }
+
+    #front main {
+        flex: 2;
+        padding: 0 0 0 1em;
+    }
+
+    #front aside {
+        flex: 1;
+        align-self: flex-start;
+        padding: 0 1em 0 0;
+    }
+}
+
+#front .container {
+    background: rgb(161, 175, 190);
+    background: linear-gradient(0deg, rgba(161, 175, 190, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+#internal main {
+    margin: 1em 2em 1em 2em;
+}
+
+#internal h1 {
+    font-family: "Audiowide", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 2em;
+}
+
+#internal h1 a {
+    text-decoration: none;
+    color: #404040;
+}
+
+#internal h2 {
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 20px;
+    margin: 10px 0px 10px 0px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 6px 12px 6px 12px;
+    display: inline-block;
+}
+
+#internal h3 {
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 24px;
+    margin: 10px 0px 20px 0px;
+}
+
+#internal .post-info {
+    display: flex;
+    align-items: center;
+}
+
+#internal h4 {
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 12px;
+    color: #666666;
+    margin: 0;
+}
+
+#internal time {
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 12px;
+    color: #DD4E20;
+    margin-left: 4px;
+}
+
+
+#internal img {
+    width: 100%;
+    padding: 1em 0 1em 0;
+}
+
+#internal p {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333333;
+    margin: 20px 0px 20px 0px;
+    line-height: 1.5;
+}
+
+#internal .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#internal .btn {
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 24px 5px 24px;
+    margin: 4em 0 4em 0;
+}
+
+#internal .prev {
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+}
+
+#internal .home {
+    color: black;
+}
+
+#internal .next {
+    background-color: #DD4E20;
+    color: white;
+    text-decoration: none;
+}
+
+
+#internal footer {
+    background: #526983;
+    padding: 2em;
+    font-size: 12px;
+}
+
+#internal footer p {
+    text-decoration: none;
+    font-family: "Bruno Ace", sans-serif;
+    color: white;
+    margin: auto;
+    font-size: 12px;
+    padding: 1em;
+}
+
+#internal footer a {
+    color: white;
+    font-size: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+.entry4 {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 1em 0;
+}
+
+.img-figcap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.img-figcap img {
+    width: 100%;
+    height: auto;
+}
+
+.img-figcap figcaption {
+    font-style: italic;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    color: #404040;
+}
+
+.entry4 p {
+    width: 50%;
+}
+
+
+@media only screen and (min-width: 600px) {
+    #internal main {
+        padding: 2em 6em 2em 6em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #internal main {
+        padding: 2em 12em 2em 12em;
+    }
+}
