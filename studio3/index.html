@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <audio id="theme-song" src="sounds/theme-song.mp3" preload="auto" loop></audio>
+    <audio id="punch-sound" src="sounds/punch.mp3" preload="auto"></audio>
+
+    <div class="battle-screen">
+        <img src="images/bg-battle.png" alt="Background" class="background">
+
+        <div id="healthbar-left" class="healthbar">
+            <div class="health-display-left health-display">100</div>
+            <div class="health-fill"></div>
+        </div>
+        <div id="healthbar-right" class="healthbar">
+            <div class="health-display-right health-display">100</div>
+            <div class="health-fill"></div>
+        </div>
+
+
+        <img src="images/leon.png" alt="Leon" class="character-left">
+
+        <img src="images/twins.png" alt="Twins" class="character-right">
+
+        <img src="images/vs.png" alt="VS Logo" class="vs-logo">
+        
+        <section id="action">
+            <div id="messages">
+                <button id="start">Start Battle!</button>
+            </div>
+            <img id="attack" class="hidden" src="images/attack.png" alt="Attack Button" width="150" height="100">
+        </section>
+
+        <div id="chat-left" class="chat hidden">
+            <span id="chat-left-name" class="chat-name">Leon</span>
+            <img src="images/chat-left.png" alt="Player Chat Box">
+            <p id="chat-left-dialogue"></p>
+        </div>
+        <div id="chat-right" class="chat hidden">
+            <span id="chat-right-name" class="chat-name">Hensel Twins</span>
+            <img src="images/chat-right.png" alt="Opponent Chat Box">
+            <p id="chat-right-dialogue"></p>
+        </div>
+    </div>
+    <footer>
+        <a href="sources.html">Sources</a>
+    </footer>
+</body>
+</html>
