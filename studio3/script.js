@@ -45,7 +45,7 @@
                 `Just give up already, ${opponent}`
             ],
             [opponent]: [
-                "Wolfe: Hah! Weakling! That was nothing!",
+                "Wolfe: Hah! Weakling! That was <span class='highlight'>nothing!</span>",
                 "Wolfe: Iven, he hit my face!",
                 "Wolfe: Iven, let's finish him off with the next one!",
                 "Iven: Is that your best shot?",
